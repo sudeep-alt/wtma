@@ -11,3 +11,6 @@ wheels/
 
 # Test file
 test.py
+
+# No pycharm BS
+.idea
