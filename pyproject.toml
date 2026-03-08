@@ -5,6 +5,11 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/wtma"]
 
+[tool.uv.workspace]
+members = [
+    "p",
+]
+
 [project]
 name = "wtma"
 version = "0.1.1"

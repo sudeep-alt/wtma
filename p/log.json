@@ -1,0 +1,7 @@
+{
+    "127.0.0.1": {
+        "detail": "IP lookup failed",
+        "reason": "'status' key wasn't 'success'",
+        "last_seen": "2026-03-08 16:28:13.234489+00:00"
+    }
+}

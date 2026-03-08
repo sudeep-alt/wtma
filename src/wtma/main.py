@@ -79,7 +79,7 @@ class WTMA:
                 if response_json["status"] != "success" or response.status_code != 200:
                     logging.warning(
                         f"IP lookup for \'{ip}\' failed, status code: {response.status_code}" if response.status_code != 200 else f"IP lookup for \'{ip}\' failed, \'status\' key wasn't \'success\'")
-                else:
+                elif response_json["status"] == "success" and response.status_code != 200:
                     logging.info(f"""
                     IP: {ip}
                     Country: {response_json["country"]}
@@ -165,7 +165,7 @@ class WTMA:
                 if response_json["status"] != "success" or response.status_code != 200:
                     logging.warning(
                         f"IP lookup for \'{ip}\' failed, status code: {response.status_code}" if response.status_code != 200 else f"IP lookup for \'{ip}\' failed, \'status\' key wasn't \'success\'")
-                else:
+                elif response_json["status"] == "success" and response.status_code != 200:
                     logging.info(f"""
                     IP: {ip}
                     Country: {response_json["country"]}
