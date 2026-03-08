@@ -12,7 +12,7 @@ members = [
 
 [project]
 name = "wtma"
-version = "0.1.2"
+version = "0.1.3"
 description = "ASGI middleware that logs every IP's geolocation, last visit, reverse DNS and much more!"
 readme = "README.md"
 requires-python = ">=3.12"
