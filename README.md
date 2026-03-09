@@ -7,6 +7,7 @@ WTMA is an ASGI middleware purposed to log every IP on your web app with detaile
 - **Proxy checking:** Verify whether IPs were associated with proxies.
 - **Hosting checking:** Verify whether IPs were associated with hosting and datacenters.
 - **Last visit:** View the dynamic and exact time when an IP hit your app.
+- **Caching:** Succesful requests are automatically cached to avoid unnecessary API calls
 - **Multiple formats:** Log data in either JSON or TOML format.
 - **Console logging:** View brief IP info in the console as well.
 - **Framework support:** Supports all ASGI frameworks ([FastAPI](https://fastapi.tiangolo.com/), [Starlette](https://starlette.dev/) etc.)
