@@ -7,7 +7,7 @@ packages = ["src/wtma"]
 
 [project]
 name = "wtma"
-version = "0.1.4"
+version = "0.1.5"
 description = "ASGI middleware that logs every IP's geolocation, last visit, reverse DNS and much more!"
 readme = "README.md"
 requires-python = ">=3.12"
