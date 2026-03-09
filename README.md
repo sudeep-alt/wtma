@@ -31,7 +31,12 @@ def root():
     }
 
 # Wrap the app at the end
-app = WTMA(app, log_path="log.json", file_format="JSON", log_to_console=True)
+app = WTMA(
+    app,
+    log_path="log.json",
+    file_format="JSON",
+    log_to_console=True
+)
 ```
 
 Also, here's the signature of the constructor method:
