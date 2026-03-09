@@ -44,7 +44,7 @@ class WTMA:
                 # "Status code: " meaning not a status code error so it doesn't need to be retried hence we can safely
                 # retain the already present data and only update the last_seen key
 
-                if (data.get(ip) and not data.get(ip).get("detail")) or (data.get(ip) and data.get(ip).get("detail") and not data.get(ip).get("detail").startswith("Status code: ")):
+                if (data.get(ip) and not data.get(ip).get("detail")) or (data.get(ip) and data.get(ip).get("detail") and not data.get(ip).get("reason").startswith("Status code: ")):
                     # Update the last seen only, use ISO 8601 time format
                     data[ip]["last_seen"] = str(datetime.now(UTC))
 
@@ -131,7 +131,7 @@ class WTMA:
                 # "Status code: " meaning not a status code error so it doesn't need to be retried hence we can safely
                 # retain the already present data and only update the last_seen key
 
-                if (data.get(ip) and not data.get(ip).get("detail")) or (data.get(ip) and data.get(ip).get("detail") and not data.get(ip).get("detail").startswith("Status code: ")):
+                if (data.get(ip) and not data.get(ip).get("detail")) or (data.get(ip) and data.get(ip).get("detail") and not data.get(ip).get("reason").startswith("Status code: ")):
                     # Update the last seen only, use ISO 8601 time format
                     data[ip]["last_seen"] = str(datetime.now(UTC))
 
