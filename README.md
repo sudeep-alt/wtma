@@ -3,13 +3,14 @@ WTMA is an ASGI middleware purposed to log every IP on your web app with detaile
 **Version:** 0.1.0
 
 ## Features
-- Geolocation logging: Log every IP with their geolocation data, such as country, continent. region and city.
-- Proxy checking: Verify whether IPs were associated with proxies.
-- Hosting checking: Verify whether IPs were associated with hosting and datacenters.
-- Last visit: View the dynamic and exact time when an IP hit your app.
-- Multiple formats: Log data in either JSON or TOML format.
-- Console logging: View brief IP info in the console as well.
-- Framework support: Supports all ASGI frameworks ([FastAPI](https://fastapi.tiangolo.com/), [Starlette](https://starlette.dev/) etc.)
+- **Geolocation logging:** Log every IP with their geolocation data, such as country, continent. region and city.
+- **Proxy checking:** Verify whether IPs were associated with proxies.
+- **Hosting checking:** Verify whether IPs were associated with hosting and datacenters.
+- **Last visit:** View the dynamic and exact time when an IP hit your app.
+- **Multiple formats:** Log data in either JSON or TOML format.
+- **Console logging:** View brief IP info in the console as well.
+- **Framework support:** Supports all ASGI frameworks ([FastAPI](https://fastapi.tiangolo.com/), [Starlette](https://starlette.dev/) etc.)
+- **Log continuation:** Continue logging in the same file after app restart
 
 ## Quickstart
 ### Install the `wtma` python package
