@@ -71,7 +71,7 @@ class WTMA:
             async with httpx.AsyncClient() as client:
                 ip = scope["client"][0]
                 response = await client.get(
-                    f"http://ip-api.com/json/{ip}?keys=status,country,continent,city,regionName,proxy,hosting,mobile,reverse")
+                    f"http://ip-api.com/json/{ip}?fields=status,country,continent,city,regionName,proxy,hosting,mobile,reverse")
                 response_json = response.json()
 
             # Immediately log to console if console logging is enabled
@@ -157,7 +157,7 @@ class WTMA:
             async with httpx.AsyncClient() as client:
                 ip = scope["client"][0]
                 response = await client.get(
-                    f"http://ip-api.com/json/{ip}?keys=status,country,continent,city,regionName,proxy,hosting,mobile,reverse")
+                    f"http://ip-api.com/json/{ip}?fields=status,country,continent,city,regionName,proxy,hosting,mobile,reverse")
                 response_json = response.json()
 
             # Immediately log to console if console logging is enabled
